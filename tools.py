@@ -23,6 +23,14 @@ def get_nz(cat):
     nz_in = _p_of_z(z_in)
     return z_in, nz_in
 
+def setup_axis(ax, xlabel=None, ylabel=None, xscale=None, yscale=None,
+               fs=18, title=None):
+    if xlabel: ax.set_xlabel(xlabel, fontsize=fs)
+    if ylabel: ax.set_ylabel(ylabel, fontsize=fs)
+    if xscale: ax.set_xscale(xscale)
+    if yscale: ax.set_yscale(yscale)
+    if title:  ax.set_title(title, fontsize=fs)
+    return ax
 
 # class th_cl():
 #     def _init(self, cosmo, catals):
@@ -32,4 +40,3 @@ def get_nz(cat):
 
 
 # def cal_th_cl(cosmo, has_rsd, dndz, bias, b2=None, mag_bias=None):
-
