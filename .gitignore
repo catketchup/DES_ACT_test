@@ -2,3 +2,4 @@
 *.fits
 act_dr4.01_masks
 __pycache__
+output_CovMatrix/*
